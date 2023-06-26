@@ -1,7 +1,8 @@
 
 //voice recognition and calling gpt api 
 const recogniseSpeech = ()=>{
-
+    document.getElementById('answer').innerHTML=""
+    document.getElementById('voiceRecognitionText').innerHTML=""
     var SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;;
     var recognition = new SpeechRecognition()
 

@@ -28,7 +28,6 @@ app.get("/",function(req,res)
 //for getting gpt response 
 app.get("/response",async function(req,res){
     const query=req.query.query;
-    var response = runCompletion("Biggest city of India")
     const completion = await openAi.createCompletion({
         model:"text-davinci-003",
         prompt: query,
